@@ -1,0 +1,5 @@
+package com.springframeworkconfiguration.demo.config;
+
+public class XYZConfig {
+
+}

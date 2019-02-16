@@ -1,0 +1,24 @@
+package com.springframeworkconfiguration.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+
+import com.springframeworkconfiguration.someotherpackage.services.XYZService;
+
+@Component(value ="xyzController")
+public class XYZController {
+	
+	private final XYZService xyzService;
+
+	@Autowired
+	public XYZController(XYZService xyzService) {
+		super();
+		this.xyzService = xyzService;
+	}
+	
+	public void printSuccess() {
+		xyzService.printSuccess();
+	}
+
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScans"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="java.lang.Appendable"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="com.springframeworkconfiguration.demo.controller.XYZController"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="com.springframeworkconfiguration.demo.component.XYZComponent"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.DependsOn"/>
+<fullyQualifiedTypeName name="com.springframeworkconfiguration.someotherpackage.services.XYZService"/>
+<fullyQualifiedTypeName name="com.springframeworkconfiguration.someotherpackage.services.XYZServiceImpl"/>
+<fullyQualifiedTypeName name="javax.annotation.Resources"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ImportResource"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.springframeworkconfiguration.demo.factories.GreeetingServiceFatory"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Profile"/>
+<fullyQualifiedTypeName name="com.springframeworkconfiguration.demo.services.SpanishGreetingServiceImpl"/>
+<fullyQualifiedTypeName name="com.springframeworkconfiguration.demo.services.GermanGreetingServiceImpl"/>
+<fullyQualifiedTypeName name="com.springframeworkconfiguration.demo.services.EnglishGreetingServiceImpl"/>
+<fullyQualifiedTypeName name="com.springframeworkconfiguration.demo.services.GreetingService"/>
+<fullyQualifiedTypeName name="com.springframeworkconfiguration.demo.component.GreetingComponent"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Import"/>
+</qualifiedTypeNameHistroy>

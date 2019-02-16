@@ -1,0 +1,5 @@
+package com.springframeworkconfiguration.demo.services;
+
+public class SpanishGreetingServiceImpl {
+
+}

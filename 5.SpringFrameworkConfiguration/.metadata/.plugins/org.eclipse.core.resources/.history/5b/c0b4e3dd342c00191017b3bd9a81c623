@@ -1,0 +1,5 @@
+package com.springframeworkconfiguration.demo.controller;
+
+public class XYZController {
+
+}

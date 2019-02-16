@@ -1,0 +1,43 @@
+package com.springframeworkconfiguration.demo.factories;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.springframeworkconfiguration.demo.services.EnglishGreetingServiceImpl;
+import com.springframeworkconfiguration.demo.services.GermanGreetingServiceImpl;
+import com.springframeworkconfiguration.demo.services.GreetingService;
+import com.springframeworkconfiguration.demo.services.SpanishGreetingServiceImpl;
+
+public class GreeetingServiceFatory {
+
+	private final GreetingService greetingService;
+
+	@Autowired
+	public GreeetingServiceFatory(GreetingService greetingService) {
+		super();
+		this.greetingService = greetingService;
+	}
+	
+	public GreetingService creatingGreetingService(String lang) {
+		GreetingService result = new EnglishGreetingServiceImpl();
+		switch(lang) {
+			case "en":
+				result =  new EnglishGreetingServiceImpl();
+				break;
+			case "es":
+				result =  new SpanishGreetingServiceImpl();
+				break;
+			case "de":
+				result = new GermanGreetingServiceImpl();
+				break;
+			default:
+				result = new EnglishGreetingServiceImpl();
+		}
+		return result;
+	}
+	
+	public void sayHello() {
+		greetingService.sayHello();
+	}
+	
+	
+}

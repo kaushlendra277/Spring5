@@ -1,0 +1,5 @@
+package com.springframeworkconfiguration.demo.component;
+
+public class GreetingComponent {
+
+}

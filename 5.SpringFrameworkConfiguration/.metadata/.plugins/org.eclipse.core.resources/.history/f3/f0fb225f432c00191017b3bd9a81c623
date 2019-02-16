@@ -1,0 +1,24 @@
+package com.springframeworkconfiguration.demo.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+
+import com.springframeworkconfiguration.demo.factories.GreeetingServiceFatory;
+import com.springframeworkconfiguration.demo.services.EnglishGreetingServiceImpl;
+import com.springframeworkconfiguration.demo.services.GreetingService;
+
+@Configuration
+public class XYZConfig {
+
+	@Bean
+	public GreeetingServiceFatory greeetingServiceFatory(GreetingService greetingService) {
+		return new GreeetingServiceFatory(greetingService);
+	}
+	
+	@Bean
+	@Profile(value = {"default"})
+	public GreetingService greetingService() {
+		return new EnglishGreetingServiceImpl();
+	}
+}

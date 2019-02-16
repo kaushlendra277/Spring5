@@ -1,0 +1,19 @@
+package com.springframeworkconfiguration.demo.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.springframeworkconfiguration.demo.component.XYZComponent;
+import com.springframeworkconfiguration.demo.factories.GreeetingServiceFatory;
+import com.springframeworkconfiguration.demo.services.GreetingService;
+import com.springframeworkconfiguration.someotherpackage.services.XYZService;
+import com.springframeworkconfiguration.someotherpackage.services.XYZServiceImpl;
+
+@Configuration
+public class XYZConfig {
+
+	@Bean
+	public GreeetingServiceFatory greeetingServiceFatory(GreetingService greetingService) {
+		return new GreeetingServiceFatory(greetingService);
+	}
+}

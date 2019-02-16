@@ -1,0 +1,22 @@
+package com.springframeworkconfiguration.demo.factories;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.springframeworkconfiguration.demo.services.GreetingService;
+
+public class GreeetingServiceFatory {
+
+	private final GreetingService greetingService;
+
+	@Autowired
+	public GreeetingServiceFatory(GreetingService greetingService) {
+		super();
+		this.greetingService = greetingService;
+	}
+	
+	public void sayHello() {
+		greetingService.sayHello();
+	}
+	
+	
+}

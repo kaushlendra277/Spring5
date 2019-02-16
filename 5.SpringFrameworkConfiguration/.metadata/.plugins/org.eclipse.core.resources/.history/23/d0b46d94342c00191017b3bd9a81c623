@@ -1,0 +1,5 @@
+package com.springframeworkconfiguration.someotherpackage.services;
+
+public class XYZService {
+
+}

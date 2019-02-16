@@ -1,0 +1,46 @@
+/***********************
+Component Scna
+**********************/
+
+1. Annotation
+ - @ComponentScan
+ - @ComponentScans
+
+2. Example
+
+Example1
+
+@ComponentScan
+class XYZ
+{
+
+}
+
+- package of XYZ class and its sub packages will be scanned
+
+Example2
+
+@ComponentScan(basePackages = {"outer.pack1", "outer.pack2"})
+class XYZ
+{
+
+}
+
+- package of XYZ class and its sub packages will be scanned
+- outer.pack1 package and its sub packages will be scanned
+- outer.pack2 package and its sub packages will be scanned
+
+Example3 (Alternative way for Example2)
+
+@ComponentScans({
+	@ComponentScan(basePackages = {"outer.pack1"}),
+	@ComponentScan(basePackages = {"outer.pack2"})
+})
+class XYZ
+{
+
+}
+
+- package of XYZ class and its sub packages will be scanned
+- outer.pack1 package and its sub packages will be scanned
+- outer.pack2 package and its sub packages will be scanned
