@@ -1,0 +1,7 @@
+package com.projectlombok.demo.pojos;
+
+public class SneakyThrowsPojo {
+	public static void sneakyThrosDemo() {
+		System.out.println("Testing @SneakyThrows");
+	} 
+}

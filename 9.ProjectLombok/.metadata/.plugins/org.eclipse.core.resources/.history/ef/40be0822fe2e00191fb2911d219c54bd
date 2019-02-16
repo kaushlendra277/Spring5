@@ -1,0 +1,20 @@
+package com.projectlombok.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.projectlombok.demo.pojos.DataPojo;
+import com.projectlombok.demo.pojos.Student;
+
+//@SpringBootApplication
+public class ProjectLombokApplication {
+
+	public static void main(String[] args) {
+		DataPojo dataPojo = new DataPojo();
+		dataPojo.setId("DataPojo.id");
+		dataPojo.setName("DataPojo.name");
+		System.out.println(dataPojo.toString());
+	}
+
+}
+

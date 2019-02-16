@@ -1,0 +1,16 @@
+package com.projectlombok.demo;
+
+import com.projectlombok.demo.pojos.DataPojo;
+
+//@SpringBootApplication
+public class ProjectLombokApplication {
+
+	public static void main(String[] args) {
+		DataPojo dataPojo = new DataPojo();
+		dataPojo.setId("DataPojo.id");
+		dataPojo.setName("DataPojo.name");
+		System.out.println(dataPojo.toString());
+	}
+
+}
+
