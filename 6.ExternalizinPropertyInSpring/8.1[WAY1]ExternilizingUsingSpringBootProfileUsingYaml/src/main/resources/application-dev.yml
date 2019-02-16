@@ -1,0 +1,10 @@
+# dev env specific custom properties
+guru:
+  db: # fake db specific properties
+    username: dev-Kaushlendra
+    password: dev-K123
+    url: dev-url@Kaushlendra@K123
+  jms: # fake jms specific properties
+    username: dev-JMS-Kaushlendra
+    password: dev-JMS-K123
+    url: dev-JMS-url@Kaushlendra@K123

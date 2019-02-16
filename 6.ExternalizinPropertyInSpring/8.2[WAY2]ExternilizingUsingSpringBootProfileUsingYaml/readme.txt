@@ -1,0 +1,10 @@
+/***********
+Way 2
+********/
+
+Here we have defined only 1 yaml file as
+ - application.yml
+ 
+Within application.yml we used yaml syntax(i.e. 3 dashes (---)) 
+to create another yaml within yaml
+ 

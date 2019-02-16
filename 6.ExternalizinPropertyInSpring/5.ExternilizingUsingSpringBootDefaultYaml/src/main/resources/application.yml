@@ -1,0 +1,9 @@
+guru:
+  db: # fake db specific properties
+    username: Kaushlendra
+    password: K123
+    url: url@Kaushlendra@K123
+  jms: # fake jms specific properties
+    username: JMS-Kaushlendra
+    password: JMS-K123
+    url: JMS-url@Kaushlendra@K123

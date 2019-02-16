@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;readme.txt&apos; to &apos;8.2[WAY2]ExternilizingUsingSpringBootProfileUsingYaml&apos;&#x0D;&#x0A;- Original project: &apos;8.1[WAY1]ExternilizingUsingSpringBootProfileUsingYaml&apos;&#x0D;&#x0A;- Destination element: &apos;8.2[WAY2]ExternilizingUsingSpringBootProfileUsingYaml&apos;&#x0D;&#x0A;- Original element: &apos;readme.txt&apos;" description="Copy file" destination="=8.2\[WAY2\]ExternilizingUsingSpringBootProfileUsingYaml" element1="readme.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1549822778075" units="0" version="1.0"/>
+</session>

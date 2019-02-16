@@ -1,0 +1,34 @@
+# spring specific properties
+spring:
+  profiles:
+    active:
+    - dev    
+    
+# custom properties
+guru:
+  db: # fake db specific properties
+    username: Kaushlendra
+    password: K123
+    url: url@Kaushlendra@K123
+  jms: # fake jms specific properties
+    username: JMS-Kaushlendra
+    password: JMS-K123
+    url: JMS-url@Kaushlendra@K123
+
+
+# 3 dash means profile specific separtion
+# 3 dash means for spring now we have two  .yml files
+# (one is application.yml, another is application-<spring.profiles>.yml)    
+---
+# dev env specific custom properties
+spring:
+  profiles: dev
+guru:
+  db: # fake db specific properties
+    username: dev-Kaushlendra
+    password: dev-K123
+    url: dev-url@Kaushlendra@K123
+  jms: # fake jms specific properties
+    username: dev-JMS-Kaushlendra
+    password: dev-JMS-K123
+    url: dev-JMS-url@Kaushlendra@K123
