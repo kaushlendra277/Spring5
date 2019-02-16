@@ -1,0 +1,11 @@
+package com.example.demo.controllers;
+
+public class PropertyInjectedControllerTest {
+
+	private PropertyInjectedController propertyInjectedController;
+	
+	public void setUp() {
+		this.propertyInjectedController = new PropertyInjectedController();
+		
+	}
+}

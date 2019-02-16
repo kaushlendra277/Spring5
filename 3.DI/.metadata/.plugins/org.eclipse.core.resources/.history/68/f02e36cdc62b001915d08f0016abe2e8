@@ -1,0 +1,60 @@
+package com.example.demo.components;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
+
+@Component
+public class LifeCycleDemoBean implements BeanNameAware,
+										  BeanFactoryAware,
+										  ApplicationContextAware,
+										  InitializingBean,
+										  BeanPostProcessor,
+										  DisposableBean{
+	private int stepCounter = 0;
+	// Step 1: Bean Initialization
+	public LifeCycleDemoBean() {
+		super();
+		System.out.println("Step "+(++stepCounter)+": Bean Initialization");
+	}
+	
+	@Override
+	public void setBeanName(String name) {
+		System.out.println("Step "+(++stepCounter)+": setBeanName() of BeanNameAware(I)");
+	}
+	
+	@Override
+	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+		System.out.println("Step "+(++stepCounter)+": setBeanFactory() of BeanFactoryAware(I)");
+	}
+	
+	@Override
+	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+		System.out.println("Step "+(++stepCounter)+": setApplicationContext() of ApplicationContextAware(I)");
+	}
+	
+	public void postProcessBeforeInitialization() {
+		System.out.println("Step "+(++stepCounter)+": postProcessBeforeInitialization() of BeanPostProcessor(I)");
+	}
+	
+	public void afterPropertiesSet() throws Exception {
+		System.out.println("Step "+(++stepCounter)+": afterPropertiesSet() of InitializingBean(I)");
+	}
+
+	public void postProcessAfterInitialization() {
+		System.out.println("Step "+(++stepCounter)+": postProcessAfterInitialization() of BeanPostProcessor(I)");
+		
+	}
+	
+	@Override
+	public void destroy() throws Exception {
+		System.out.println("Step "+(++stepCounter)+": destroy() of DisposableBean(I)");
+	}
+}

@@ -1,0 +1,10 @@
+package com.example.demo.components;
+
+public class MyEnglishMessageComponent implements GenericInterface {
+
+	@Override
+	public void sayGenericHello() {
+		System.out.println(MyEnglishMessageComponent.class.getName());
+	}
+
+}

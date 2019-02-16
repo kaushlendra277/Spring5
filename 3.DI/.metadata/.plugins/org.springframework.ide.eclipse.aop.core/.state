@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="3DIUsingPrimaryViaSpringBoot"/>
+<aop-project name="6DISpringCustomBannerViaSpringBoot"/>
+<aop-project name="1DIviaSpringBoot"/>
+<aop-project name="5DISpringBeanLifeCycleViaSpringBoot"/>
+<aop-project name="4DISpringProfilesViaSpringBoot"/>
+<aop-project name="2DIUsingQualifierViaSpringBoot"/>
+</aop-reference-model>

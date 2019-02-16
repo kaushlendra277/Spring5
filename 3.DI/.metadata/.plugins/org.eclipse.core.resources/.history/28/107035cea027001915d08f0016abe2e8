@@ -1,0 +1,10 @@
+package com.example.demo.services;
+
+public class GreetingServiceImpl implements GreetingService {
+
+	@Override
+	public String sayHello() {
+		return null;
+	}
+
+}
