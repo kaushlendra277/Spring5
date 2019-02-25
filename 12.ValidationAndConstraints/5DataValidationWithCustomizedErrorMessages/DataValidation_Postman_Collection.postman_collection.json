@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "a511f299-2f7a-4c2e-b6d9-1e27dda76acc",
+		"name": "DataValidation_Postman_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Model Binding failed by Spring",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"id1\",\n\t\"name\": \"name\",\n\t\"age\": 0,\n\t\"flag\":false\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Model Binding [NOT] failed by Spring",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"id1\",\n\t\"name\": \"name\",\n\t\"age\": 0,\n\t\"flag\":false\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/post/debug",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"debug"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
